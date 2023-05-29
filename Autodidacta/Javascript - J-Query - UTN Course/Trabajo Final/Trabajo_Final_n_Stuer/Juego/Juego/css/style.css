@@ -1,0 +1,43 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	margin: 0;
+	padding: 10px 20px;
+	background-image: url(/Img/fondo-pared-ladrillo-textura-negro_53876-63590.jpg);
+	width: 100%;
+	min-height: 100vh;
+}
+h1{
+	font-family: Arial, Helvetica, sans-serif;
+	color: rgb(255, 0, 0);
+}
+
+.float-right{
+	font-size: 20px;
+	color:rgb(2, 33, 52);
+	font-weight: bolder;
+}
+
+p{
+	font-size: 25px;
+	font-weight: bold;
+	color: aliceblue;
+}
+
+.teclado{
+	font-size: 25px;
+	font-weight: bold;
+	color: aliceblue;
+}
+
+.background-desert {
+	background-image: url(../Imagenes/old-western-towns-vector.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	object-fit: cover;
+}
+
+#imagenAhorcado {
+	max-width: 100%;
+	max-height: 100vh;
+}

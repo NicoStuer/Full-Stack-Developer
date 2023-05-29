@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Juego/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+      <h1 class="text-center">Juego del Ahorcado</h1>
+      <div class="float-right">Letras incorrectas: <span id='errores'>0</span> de <span id='erroresPermitidos'></span></div>
+      <div class="text-center">
+        <div class="background-desert" >
+        <img id='imagenAhorcado' src="./Imagenes/0.png" alt="">
+      </div>
+        <p>Adivine el lenguaje de Programacion</p>
+        <p id="palabraDestacada">La palabra indicada va aqui</p>
+        <div id="teclado" class="teclado"></div>
+        <button class="btn btn-info" onClick="reset()">Reiniciar</button>
+      </div> 
+    </div>
+    
+    <script src='./script/app.js'></script>
+    </body>
+</html>

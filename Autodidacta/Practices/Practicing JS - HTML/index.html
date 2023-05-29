@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="tittle-div"><h1>javascript - Calse 1</h1>
+<div class="lista-buenas-practicas"><h2>Buenas Practicas</h2></div>
+<ul>
+    <li>Usa saneke_case en:
+        <ul>
+            <li>Archivos:
+                <ul>
+                    <li>mi_archivo_javascript.js</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>Usa UPPER_CASE en:
+        <ul>
+            <li>Constantes:
+                <ul>
+                    <li>const UNA_CONSTANTE = 'soy una constante'; <br>
+                        PI = 3.141592653589793
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>Usa UpperCamemlCase en:
+        <ul>
+            <li>Clases: (Programacion orientada a objetos) 
+                <ul>
+                    <li>class SerHumano{<br>
+                        &nbsp&nbsp&nbspconstructor (nombre, genero){ <br>
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspthis.nombre = nombre <br>
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspthis.genero = genero <br>
+                            &nbsp&nbsp&nbsp&nbsp} <br>
+                            miNombreEs () { <br>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspreturn `Mi nombre es ${this.nombre}`<br>
+                                &nbsp&nbsp&nbsp&nbsp}<br>
+                        }    
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>Usa lowerCamelCase en:
+        <ul>
+            <li>Objetos: <br>
+                &nbsp&nbsp&nbsp const unObjeto= { <br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp nombre: 'Jonathan'; <br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp email: 'jonmirchan@gmail.com' <br>
+                    &nbsp&nbsp&nbsp}
+                
+            </li>
+        </ul>
+        <ul>
+            <li>Primitivos:<br>
+                &nbsp&nbsp&nbsp let unaCadena = 'Hola Mundo'; <br>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp unNumero = 19; <br>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp unBoolean = true; <br>
+
+            </li>
+        </ul>
+        <ul>
+            <li>Funciones: <br>
+                &nbsp&nbsp&nbsp function holaMundo (nombre) { <br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp alert(`Hola mundo ${nombre}`)<br>
+                    &nbsp&nbsp&nbsp } <br>
+                    &nbsp&nbsp&nbsp holaMundo(`Jonathan`);
+
+            </li>
+        </ul>
+        <ul>
+            <li>Instancias:<br>
+                &nbsp&nbsp&nbsp const ajax = new XMLHttpRequest();<br>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp jon = new serHumano(`Jonathan`, `Hombre`);<br>
+
+            </li>
+        </ul>
+    </li>
+</ul> 
+<div class="ordenamiento-de-codigo">
+    <h1>Ordenamiento de código</h1>
+    <ol>
+        <li>IMPORTACION DE MODULOS</li>
+        <li>DECLARACION DE VARIABLES</li>
+        <li>DECLARACION DE FUNCIONES</li>
+        <li>EJECUCION DE CODIGO</li>
+    </ol>
+</div>
+ <div class="tipos-de-datos-en-js">
+    <h1>Tipos de datos en JavaScript</h1>
+    <ol>
+        <li>Primitivos: Se accede directamente al valor.
+            <ul>  
+                <li>string</li>
+                <li>number</li>
+                <li>boolean</li>
+                <li>null</li>
+                <li>undefined</li>
+                <li>NaN</li>
+            </ul>
+        </li>
+        <li>Compuestos: Se accede a la referencia del valor.
+            <ul>
+                <li>object = {};</li>
+                <li>array = [];</li>
+                <li>function(){}</li>
+                <li>Class{}</li>
+                <li>etc.</li>
+            </ul>
+        </li>
+    </ol>
+ </div>
+</div>
+<div class="clase-dos">
+    <div class="fundamentos-JavaScript">
+        <h1>Fundamentos JavaScript - Clase 2</h1>
+        <h3>Variable var Vs. let</h3>
+        <ul>
+            <li><p>No usar nunca la declaracion de una variable con var, dado q JavaScript las considera globales y deben estar muy seguros para usarla en todo el ambito del documento, a diferencia de let y const.</p></li>
+            <li><p>Var no respeta los scopes de block-variable global</p></li>
+            <li><p>Let genera variables de block</p></li>
+        </ul>
+        <h3>Variable const</h3>
+        <ul>
+            <li>No se puede inicializar vacia</li>
+            <li>Se utiliza para valores q no cambian dentro de el codigo</li>
+            <li>Las constantes se comportan de forma diferente entre valores Primitivos y valores Compuestos. </li>
+        </ul>
+    </div>
+    <div class="datos-primitivos">
+    <div class="clase-tres">
+        <h1>Cadena de Texto(String) - Clase 3</h1>
+        <div class="cadena-de-texto">
+            <p>Usar metodos Mozila para manejo de cadenas de texto</p>
+        </div>
+    </div>
+    <div class="clase-cuatro">
+        <h1>Template Strings - Clase 4</h1>
+        <div class="template-strings">
+            <h3>Concatenacion - Interpolacion</h3>
+            <ul>
+                <li>Concatenacion: suma de strins separadas por comillas</li>
+                <li>Interpolacion: suma de strings y variables, dentro de comillas invertidas "`" y las variables se colocan dentro de ${}.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="clase-cinco">
+        <h1>undefined, null & NaN - Clase 5</h1>
+        <ul>
+            <li>undefined: Variable q no ha sido inicializada, y que el valor esta ausente.</li>
+            <li>nulo: valor de variable asignado por el programador, tambien significa q la variable esta vacia.</li>
+            <li>NaN: "Not a Number", operaciones aritmeticas con variables de distintos tipos.</li>
+        </ul>
+    </div>
+    <div class="clase-seis">
+        <h1>number y boolean - Clase 6</h1>
+    </div>
+    </div>
+</div>
+<div class="datos-compuestos">
+    <div class="clase-siete">
+        <h1>Funciones - Clase 7</h1>
+        <p>Una funcion es un bloque de codigo, autocontenido,
+            que se puede definir una vez y ejecutar en cualquier 
+            momento.
+            Opcionalmente, una funcion puede aceptar parametros
+            y devolver un valor.
+            <br>
+            Las funciones en JavaScript son objetos, un tipo especial
+            de objetos:<br>
+            Se dice que las funciones son ciudadanos de primera clase 
+            por que pueden asignarse a un valor, y pueden pasarse como 
+            argumentos y usarse como un valor de retorno. 
+        </p>
+        <p>
+        <h3>Funcion Declarada</h3><br>
+        <br>
+        function estoEsUnaFuncion(){<br>
+            &nbsp&nbsp&nbspconsole.log("Uno");<br>
+            &nbsp&nbsp&nbspconsole.log("Dos");<br>
+            &nbsp&nbsp&nbspconsole.log("Tres");<br>
+        }<br>
+        </p>
+        <h3>Funcion con return</h3>
+        <p>
+            Para que una funcion nos retorne un valor se utiliza
+             la palabra reservada "return" e inmediatamente la 
+             funcion deja de ejecutarse.<br>
+             <br>   
+             function queMeRetorneAlgo(){<br>
+             &nbsp&nbsp&nbsp<b>return</b> "vuelve este texto a pantalla"<br>
+             }<br>
+        </p>
+        <h3>Funcion acepta parametros</h3>
+            <p> funcion saludar(nombre, edad){<br>
+            &nbsp&nbsp&nbspconsole.log(`Hola mi nombre es &{nombre} 
+            y tengo ${años}.`)<br>
+            }<br>
+            saludar("Nico", 7);<br>
+            </p>
+        <h3>Funcion anonima - Expresada</h3>
+        <p>
+            const funcionExpresada = funcion(){ <br>
+                &nbsp&nbsp&nbspconsole.log("Esto es una funcion expresada, es decir,
+                una funcion q se le ha asignado como valor a una variable, si 
+                invocamos esta funcion antes de su definicion JS nos dira...
+                Que no se puede acceder a funcion antes de ser inicializada.") <br>
+            };<br>
+            funcionExpresada();
+        </p>    
+    </div>
+    <div class="clase-ocho">
+        <h1>Arreglos - Clase 8</h1>
+        <p>Se recomienda crearlos con la palabra <b>const</b>, 
+            dado q en principio no cambiara de ser un arreglo, 
+            y por modificar su contenido no dejaria de ser una 
+            constante.</p>
+                <ul> Formas de declarar un array:</h3>
+                    <li>const a = []</li>    
+                    <li>const b = Array.of("X", "Y", "Z", 9, 8, 7)</li>
+                    <li>const c = Array(100).fill("XXX") <br>
+                    Crea un arreglo de 100 posiciones con some dentro. </li>
+                </ul> 
+            </p>
+            <H3>Recorriendo y asignando en Arreglos</H3>
+            <p>
+                const colores = ["Rojo", "Verde", "Azul"]; <br>
+                colores.forEach(function(element, index){ <br>
+                &nbsp&nbsp&nbsp console.log(`<'li id="${index}">${element}</'li>`) <br>    
+                })<br>
+                <b>Salida</b><br>
+                &nbsp&nbsp&nbsp <'li id="0">Rojo<'/li><br>
+                &nbsp&nbsp&nbsp <'li id="1">Verde<'/li><br>
+                &nbsp&nbsp&nbsp <'li id="2">Azul<'/li><br> 
+            </p>
+    </div>
+    <div class="clase-nueve">
+        <h1>Objetos - Clase 9</h1>
+        <p>Mismo caso que los arreglos, se declaran con <b>const</b></b></p>
+        <ul><p>Formas de declarar un Objeto: </p>
+            <li>const c = {} - esta es la mas usada</li>
+            <li>const c = new Object() - casi no se usa</li>
+        </ul>
+        <p>
+            const nico = {
+                &nbsp&nbsp&nbsp nombre: "Nico",<br>
+                &nbsp&nbsp&nbsp apellido: "Stuer",<br>
+                &nbsp&nbsp&nbsp edad: 39,<br>
+                &nbsp&nbsp&nbsp soltero: false,<br>
+                &nbsp&nbsp&nbsp contacto:{<br>
+                    &nbsp&nbsp&nbsp&nbsp email:"nicolas.m.stuer@gmail.com",<br>
+                    &nbsp&nbsp&nbsp&nbsp movil:"2244-461006"<br>
+                    &nbsp&nbsp&nbsp }<br>
+                &nbsp&nbsp&nbsp saludar: function(){<br>
+                &nbsp&nbsp&nbsp&nbsp console.log("holas...")<br>        
+                &nbsp&nbsp&nbsp }<br>   
+                }<br>        
+        </p>
+        <p>Se accede a los variables(atributos o propiedades) o funciones(metodos) de los objetos a travez del nombre del objeto seguido de un punto y agregando el nombre del mismo: <br>
+        Ej.: console.log()<br>
+        Utilizar los metodos de objetos:<br>
+        Object.keys(Nico); Devuelve un arreglo con las llaves dentro del objeto especificado.<br>
+        Object.values(Nico); Devuelve un arreglo con los valores dentro de las llaves en el objeto.<br>
+        Nico.hasOwnProperty("nombre"); nos retorna un boolean q nos dice si contiene esa propiedad dentro.<br>    
+        </p>
+    </div>
+
+</div>
+<div class="tipos-de-operadores">
+    <div class="clase-diez">
+        <h1>Tipos de Operadores - Clase 10</h1>
+        <ul>
+            <li>Aritmericos: +, -, *, /, %, ()</li>
+            <li>Relacionales: >, <, >=, <=, ==, ===, !=, !== </li>
+            <li>Unarios: ++ -- ver si se coloca antes o despues.</li>
+            <li>Logicos: ! - Not, || - Or, && - And
+                <ul>
+                    <li>! - Not: Niega, es decir lo que es verdadero 
+                        lo vuelve falso y viceversa.</li>
+                    <li>|| - Or: Cuando tengo 2 o mas condiciones, 
+                        con que una se cumpla, es decir, sea verdadera, el Or validara.</li>
+                    <li>&& - And: Cuando tengo dos o mas condiciones, 
+                        todas tienen que cumplirse, es decir, ser verdaderas para que and se valide.  </li>        
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="condicionales">
+    <div class="clase-once">
+        <h1>Condicionales - Clase 11</h1>
+        <ul>
+            <li>If-Else</li>if(condicion){se ejecuta}else if{esto otro si no se cumple la condicion}else{esto si no se cumplen las dos anteriores};
+            <li>Switch
+                <ul>switch(key){
+                    <li>case 0</li>
+                    <li>console.log("Domingo");</li>
+                    <li>break;</li>
+                    <li>case 1</li>
+                    <li>console.log("lunes");</li>
+                    <li>break;</li>
+                    <li>default;</li>
+                    <li>console.log("El dia no existe");</li>
+                    <li>break;</li>
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+</div>
+<div class="ciclos-loops">
+    <div class="clase-doce">
+        <h1>Ciclos (Loops) - Clase 12</h1>
+        <h3>Ciclo while - do while</h3>
+        <p>let contador = 0<br>
+            while(contador>10){<br>
+                &nbsp&nbsp&nbsp console.log("contador");<br>
+                &nbsp&nbsp&nbsp contador++<br>
+            }<br>
+
+            do{<br>
+                &nbsp&nbsp&nbsp console.log("do while" + contador);<br>
+                &nbsp&nbsp&nbsp contador++;<br>
+            } while (contador < 10);<br>
+        </p>
+        <br>
+        <h3>Ciclo For</h3>
+        <p> for(i=0, i<`10, i++){<br>
+            &nbsp&nbsp&nbsp console.log("for" + i)<br>
+        }<br>
+        </p>
+        <br>
+        <h3>Ciclo for in</h3>
+        <p>El ciclo for in nos permite recorrer o iterar todas las propiedades de un objeto primitivo</p>
+        <p>
+            for(const propiedad in nico){<br>
+                &nbsp&nbsp&nbsp console.log(`Key: ${propiedad}, Value: ${nico[propiedad]`);<br>
+            }<br>
+        </p>
+        <br>
+        <h3>Ciclo for of</h3>
+        <p>El ciclo for of nos permite recorrer todos los elementos de un objeto que sea iterable</p>
+        <p>
+            for(const elemento of numeros){<br>
+                &nbsp&nbsp&nbsp console.log(elemento)<br> 
+            }<br>
+        </p>
+    </div>
+</div>
+
+<div class="break-continue">
+    <div class="clase-trece">
+        <h1>Break & Continue</h1>
+        <p>Break: sale de la estructura que lo contiene.</p>
+        <p>Continue: omite la iteracion especificada.</p>
+    </div>
+</div>
+<div class="destructuracion">
+    <div class="clase-catorce">
+        <h1>Destructuracion de objetos y arreglos</h1>
+        <p>
+            const numeros = [1, 2, 3];<br>
+            <h3>Sin destructuracion</h3>
+            <br>
+            let uno = numero[0],<br>
+            &nbsp&nbsp&nbsp dos = numeros[1],<br>
+            &nbsp&nbsp&nbsp tres = numeros[2]<br>
+            console.log(uno, dos, tres);<br>
+            <br>
+            <h3>Con destructuracion</h3>
+            <br>
+            const[one, two, three] = numeros;<br>
+            console.log(one, two, three); <br>
+            <br>
+            let persona = {<br>
+            &nbsp&nbsp&nbsp nombre: nico, <br>
+            &nbsp&nbsp&nbsp apellido: stuer, <br>
+            &nbsp&nbsp&nbsp edad: 39, <br>
+            } <br>
+            <br>
+            const{nombre, apellido, edad} = persona; <br>
+            console.log(nombre, apellido, edad); <br>
+
+        </p>
+    </div>
+</div>
+<div class="parametros-resr-operator-spread">
+    <div class="clase-quince">
+        <h1>Parametros Rest & Operador Spread</h1>
+        <h3>Parametros Rest</h3>
+        <p>Son una forma de virtualmente ir agregando parametros infinitos, se declara anteponiendo tres puntos suspensivos"...".</p>
+        <p>
+            function sumar(a, b, ...c){<br>
+                &nbsp&nbsp&nbsp let resultado = a + b; <br>
+                &nbsp&nbsp&nbsp c.forEach(function(n){ <br>
+                    &nbsp&nbsp&nbsp resultado += n <br>
+                )}; <br>
+                return resultado; <br>
+            }<br>
+        </p>
+        <br>
+        <h3>Spred Operator</h3>
+        <p>Se utiliza para unificar arreglos.</p>
+        <p>
+            const arr1 = [1, 2, 3, 4, 5], <br>
+            &nbsp&nbsp arr2 = [6, 7, 8, 9, 0]; <br>
+            <br>
+            const arr3 = [...arr1, ...arr2]; <br>
+        </p>
+    </div>
+</div>
+<div class="arrow-function">
+    <div class="clase-dieciseis">
+        <h1>Arrow Functions</h1>
+        <p>Es una forma de definir una funcion anonima.</p>
+        <p>
+            const saludar = () => {<br>
+            &nbsp&nbsp&nbsp console.log("hola");<br>
+            }<br>
+            saludar();
+        </p>
+        <p>Cuando la funcion tiene una sola linea de instrucciones, se pueden omitir las llaves</p>
+        <p>const saludar = () => console.log("hola");</p>
+        <br>
+        <p>Los parametros de las funciones van dentro de los parametros.</p>
+        <p>const saludar = (nombre) => console.log(`hola ${nombre}`); </p>
+        <p>saludar("Nico");</p>
+        <br>
+        <p>Cuando una funcion flecha no recive parametros, indefectiblemente lleva los parentesis. Si la funcion recive solo un parametro pueden omitirse los mismos.</p>
+        <p>const saludar = nombre => console.log(`Hola ${nombre}`);<br>
+        saludar("Nico"); </p>
+        <br>
+        <p>Con las arrow function de una linea tambien podemos omitir el return:</p>
+        <p>const sumar = (a, b) => a + b; </p>
+    </div>
+</div>
+    <script type="text/javascript" src="./script/index.js"></script>
+</body>
+</html>

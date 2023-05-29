@@ -1,0 +1,21 @@
+Tarea
+Una vez que terminaron el curso algunos de ustedes se juntaron y
+decidieron abrir su propia empresa de software. Dado que todos eran compañeros
+de curso, decidieron que cada uno tendrá igual voz y voto en dicha empresa
+Empezaron haciendo pequeñas webs para almacenes de barrio, y
+showrooms de ropas, los cuales fueron terminados sin grandes problemas.
+Su primer gran cliente internacional les encargó realizar una
+página web “tope de gama”, la cual al ser la primera que hicieron de este tipo,
+les llevó más tiempo del que habían estimado en un principio, máxime que
+decidieron usar una metodología de trabajo tradicional.
+El dia de la demo, el cliente les hace saber su enojo por el
+retraso, y a su vez cambia de opinión respecto de la paleta de colores de su
+web como asi también de la barra de navegacion, y les solicita que hagan el
+cambio en el menor tiempo posible.
+Esto les genera un profundo desagrado debido a que dicho cambio
+no estaba en los planes, y dado que ustedes ya habían presupuestado y cobrado
+el trabajo, el cliente no acepta pagar diferencia alguna.
+Creen que
+aplicando una metodología de trabajo ágil, esto podría evitarse? Por que? Y
+como?. Desarrollen su respuesta
+Por ultimo desarrollen segun lo visto en clase y su propia opinion cuales serian las principales ventajas de una metodologia de trabajo agil y porque creen que es tan usada en la insdustria IT.

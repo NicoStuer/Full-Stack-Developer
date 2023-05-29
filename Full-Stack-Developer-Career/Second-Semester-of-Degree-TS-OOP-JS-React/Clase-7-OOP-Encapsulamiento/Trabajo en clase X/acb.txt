@@ -1,0 +1,4 @@
+Ejercicio de tarea OBLIGATORIO.
+-Hacer una clase JuegoDeCasino y de esa clase crear dos clases Hijas (Herencia).
+-Luego aplicar composicion entre una clase Casino y las dos clases hijas de Juego.
+-Crear los UML tal como los vieron en FIP y como esta explicado en el material de estudio

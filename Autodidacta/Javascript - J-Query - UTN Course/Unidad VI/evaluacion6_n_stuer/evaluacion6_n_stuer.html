@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Evaluación 6</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <h1>Evaluación Unidad VI</h1>
+
+    <h3>Ingrese el moto para calcular el iva correspondiente:</h3>
+    <div class="divInput">
+    <input class="input" type="number" placeholder="Ingese el importe:">
+    </div>    
+	<h4>Seleccione el iva correspondiente:</h4>
+<div class="container">
+    <div>
+        <div class="radio">
+            <input type="radio" name="registro" value="1.21">
+            <label for="one">21% </label><p>Tasa general.</p>
+        </div>
+        <div class="radio">
+            <input type="radio" name="registro" value="1.105">
+            <label for="two"> 10,5% </label><p> Bienes de capital y de primera necesidad.</p>
+        </div>
+        <div class="radio">
+            <input type="radio" name="registro" value="1.27">
+            <label for="three">27% </label><p> Energía eléctrica y telecomunicaciones.</p>
+        </div>
+        <hr>
+    </div>
+        <div>
+            <div id="precioInicial"></div>    
+            <div class="claculo" id="precioFinal"></div>
+        </div>
+        <hr>
+</div>
+
+	<script src="./js/funciones_evaluacion6_stuer.js"></script>
+</body>
+</html>

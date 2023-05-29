@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Evaluación 7</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+        integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+	
+    
+    <div class="container">
+            
+            <div class="header">
+               <h2>Formulario de Registro</h2> 
+            </div>
+
+            <form action="" class="form" id="form">
+                <div class="form-control">
+                    <label>Nombre</label>
+                    <input type="text" name="" id="nombreUsuario" placeholder="Ingrese su Nombre" autocomplete="off">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error</small>
+                </div>
+
+                <div class="form-control">
+                    <label>Apellido</label>
+                    <input type="text" name="" id="apellido" placeholder="Ingrese su Apellido" autocomplete="off">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error</small>
+                </div>
+
+                <div class="form-control">
+                    <label>Fecha de Nacimieto</label>
+                    <input type="date" name="" id="edad" placeholder="Ingrese su Fecha de Nacimieto" autocomplete="off">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error</small>
+                </div>
+
+                <div class="form-control">
+                    <label>Email</label>
+                    <input type="text" name="" id="email" placeholder="Ingrese su Email" autocomplete="off">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error</small>
+                </div>
+
+                <div class="form-control">
+                    <label>Contraseña</label>
+                    <input type="password" pattern=".{6,}" name="" id="contraseña" placeholder="Ingrese su Contraseña" autocomplete="off">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error</small>
+                </div>
+
+                <div class="form-control">
+                    <label>Confirmacion Contraseña</label>
+                    <input type="password" name="" id="confirmContraseña" placeholder="Confirme su Contraseña" autocomplete="off">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error</small>
+                </div>
+                <input type="submit" value="submit" class="btn">
+            </form>
+        </div>
+
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>    
+	<script type="text/javascript" src="./js/app.js"></script>
+</body>
+</html>

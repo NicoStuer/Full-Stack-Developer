@@ -66,7 +66,7 @@ const renderCalls = (callsArr, object) => {
   );
 };
 
-//La función viewAphorism busca un personaje en el objeto objectTwo y renderiza sus citas o mensajes.
+//La función viewAphorism busca un personaje en el objeto objectTwo y renderiza sus mensajes.
 const viewAphorism = (object, objectTwo) => {
   let characterMsg = ["I have nothing to say"];
   const name = objectTwo.find(

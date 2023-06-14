@@ -11,6 +11,7 @@ async function hacerRequest() {
     const data = await response.json();
     data.forEach((user) => {
       renderData(user);
+      console.log(user)
     });
   } catch (error) {
     console.log(error);
@@ -66,44 +67,26 @@ function renderData(user) {
   row.dataset.userId = user.id;
 
   row.innerHTML = `
-    <div class="col-md-1">
+    <div class="col-md-2">
       <div class="person-image-container">
         <div class="person-image">
           <img src="${user.avatar}" alt="Avatar">
         </div>
       </div>
     </div>
-    <div class="col-md-2">
+    <div class="col-md-3">
       <div class="column-content text-center">
         <h4>${user.name}</h4>
       </div>
     </div>
-    <div class="col-md-2">
-      <div class="column-content text-center">
-        <h4>${user.lastName}</h4>
-      </div>
-    </div>
     <div class="col-md-3">
       <div class="column-content text-center">
-        <p>${user.email}</p>
+        <h4>${user.address}</h4>
       </div>
     </div>
-    <div class="col-md-1">
+    <div class="col-md-4">
       <div class="column-content text-center">
-        <div class="button-container centered-button">
-          <button class="btn btn-primary">
-            <i class="fas fa-edit"></i> Editar
-          </button>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-1">
-      <div class="column-content text-center mb-2">
-        <div class="button-container centered-button">
-          <button class="btn btn-danger">
-            <i class="fas fa-trash"></i> Descartar
-          </button>
-        </div>
+        <p>${user.email}</p>
       </div>
     </div>
   `;

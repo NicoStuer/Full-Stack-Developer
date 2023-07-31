@@ -1,6 +1,6 @@
 //CRUD
 //Traer todos los datos(get), Borrar datos(delete), Editar datos (put/patch), Crear (post)
-import renderData from "./Components/RenderData.js";
+import renderData from "./Funciones/RenderData.js";
 
 
 const container = document.getElementById("container");

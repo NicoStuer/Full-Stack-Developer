@@ -6,7 +6,7 @@ import One from "./components/One";
 function App() {
   const [users, setUsers] = useState([]);
   // eslint-disable-next-line no-unused-vars
-  const [url, setUrl] = useState("https://randomuser.me/api/?results=10");
+  const url = "https://randomuser.me/api/?results=10";
   const [error, setError] = useState(false);
 
   const fakeError = () => {
